@@ -4,6 +4,8 @@ setwd("C:/Users/Lu/Documents/R/exdata_data_household_power_consumption")
 data_list <- read.table("household_power_consumption.txt",sep = ";",header = TRUE,stringsAsFactors=FALSE, dec=".")
 setwd(d)
 
+Sys.setlocale("LC_TIME", "English") 
+
 #Adjusting data
 #Date 
 data_list$Date <- as.Date(data_list$Date,format="%d/%m/%Y")
