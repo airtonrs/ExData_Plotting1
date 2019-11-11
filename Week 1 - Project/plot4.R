@@ -38,7 +38,7 @@ par(mfrow = c(2, 2))
 with(plottest,plot(Time, Global_active_power, type="l", ylab="Global Active Power", cex=0.2, xlab=""))
 
 #2nd Graph
-with(plottest,plot(Time, Voltage, type="l", ylab="Voltage", xlab="datetime"))
+with(plottest,plot(Time, Voltage, type="l", ylab="Voltage", xlab=""))
 
 #3rd Graph
 with(plottest,plot(Time, Sub_metering_1, type="l", ylab="Energy Submetering", xlab=""))
@@ -47,7 +47,7 @@ with(plottest,lines(Time, Sub_metering_3, type="l", col="blue"))
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=, lwd=2.5, col=c("black", "red", "blue"), bty="o")
 
 #4th Graph
-with(plottest,plot(Time, Global_reactive_power, type="l", ylab="Global_reactive_power", xlab="datetime"))
+with(plottest,plot(Time, Global_reactive_power, type="l", ylab="Global_reactive_power", xlab=""))
 
 dev.off()
 
