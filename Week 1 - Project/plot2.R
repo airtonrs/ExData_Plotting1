@@ -22,12 +22,12 @@ plottest <- rbind(subset(data_list,Date=='2007-02-01'),
                   subset(data_list,Date=='2007-02-02'))
 
 #Setting plot to PNG 480x480
-png("plot1.png", width=480, height=480)
+png("plot2.png", width=480, height=480)
 
 #Creating hist as plot1
-hist(plottest$Global_active_power,col="red",main="Global Active Power",xlab = "Global Active Power (killowatts)")
+with(plottest,plot(Time,Global_active_power,type="l", xlab="", ylab="Global Active Power (kilowatts)"))
 
 dev.off()
 
-with(plottest,plot(Time,Global_active_power))
+
 
