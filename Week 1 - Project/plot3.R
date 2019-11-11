@@ -32,9 +32,9 @@ png("plot3.png", width=480, height=480)
 #sub metering 1 - Black
 with(plottest,plot(Time, Sub_metering_1, type="l", ylab="Energy Submetering", xlab=""))
 #Adding sub metering 2 - Red
-lines(datetime, subMetering2, type="l", col="red")
+with(plottest,lines(Time, Sub_metering_2, type="l", col="red"))
 #Adding sub metering 2 - Blue
-lines(datetime, subMetering3, type="l", col="blue")
+with(plottest,lines(Time, Sub_metering_3, type="l", col="blue"))
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c("black", "red", "blue"))
 
 dev.off()
