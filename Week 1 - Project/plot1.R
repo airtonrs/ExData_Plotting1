@@ -28,6 +28,3 @@ png("plot1.png", width=480, height=480)
 hist(plottest$Global_active_power,col="red",main="Global Active Power",xlab = "Global Active Power (killowatts)")
 
 dev.off()
-
-with(plottest,plot(Time,Global_active_power))
-
